@@ -1,25 +1,3 @@
-# page
- 
-Para poder crear el ambiente de ejecucion unicamente hay que ejecutar la api con el comando
-npm run dev
-
-de igual manera para Meteor solo hay que ejecutar el proyecto con 
-meteor run
-
-en el caso de la api en el archivo connection.js que se encunetra en la raiz del proyecto estan los datos para la conexion con la base de datos mysql
-igualmente en la raiz el archivo mongoDB.js es para los datos de conexion con mongoDB
-de igual manera hay un archivo llamado isAuth que puede funcionar como un middleware para verificar si es que el usuairo tiene acceso a la informacion en la api
-
-por ultimo una vez ejecutado el proyecto Meteor hay que ir a la pagina /pruebas se puede ejecutar el boton de crear pet Sitter tantas veces como sea deseado, manda a llamar una api de usuarios aleatorios para poder generarlos de manera continua
-el resto de botones son sxripts con los que genere datos de la base de datos, preferentemente no presionar pues pueden interrumpir el funcionamiento de la api
-
-para la realizacion de la base de datos en la raiz de este proyecto adjunto un archivo query de mysql llamado 'DBcreation.sql' que solo require ejecutarlo para poder tener toda la base de datos y de igual manera adjunto el texto aqui para unicamente ejecutarlo en la conosola de mysql
-
-
-
-
-
-
 CREATE DATABASE  IF NOT EXISTS `petsitter` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `petsitter`;
 -- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
