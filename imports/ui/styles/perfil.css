@@ -1,0 +1,233 @@
+.TopContainerDetails {
+  width: 100%;
+}
+.ImageTopDetails {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+.TopProfileDetails {
+  display: flex;
+  background-color: var(--main-bg);
+  width: 100%;
+  position: relative;
+  height: 100px;
+  box-shadow: 0px 2px 2px 1px var(--main-bg);
+}
+.TopProfileDetails .ProfileImageDetails {
+  border-radius: 50%;
+  border: 10px solid var(--main-bg);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transform: translate(10px, -75px);
+  position: absolute;
+}
+.ContenedorTopDetails {
+  height: 100%;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 4fr 3fr;
+  gap: 3px;
+}
+.ContenedorTopDetails .TopCD1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
+  font-size: 18px;
+  color: #666;
+  font-weight: 500;
+}
+
+.Infgendiv4 {
+  width: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--second-bg);
+  border-radius: 10px;
+  padding: 5px;
+  cursor: default;
+}
+.Infgendiv4 div {
+  width: 100%;
+  text-align: center;
+}
+.Infgendiv4 img {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+}
+
+
+.topcontainerdetailsa{
+  background-color: var(--main-bg);
+  box-shadow: 0px 2px 2px 1px var(--main-bg);
+  padding: 10px;
+  width: 100%;
+}
+.ContainerDet2 span {
+  width: 100%;
+  font-size: 17px;
+  font-weight: bold;
+}
+.DetailsGallery{
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.DetailsGallery > * {
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.DetailsGallery2{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Infgendiv{
+  display: flex;
+  height: 80px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: var(--second-bg);
+
+}
+.Infgendiv img{
+  border-radius: 50%;
+}
+.Infgendiv i{
+  color: var(--main-color);
+}
+.Infgendiv div{
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.reseñaContenedor{
+  margin-bottom: 15px;
+
+}
+.reseñaContenedor textarea{
+  border: 1px solid #666;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+.cont2{
+  margin-top: 10px;
+}
+.resConB{
+  display: flex;
+  font-size: 20px;
+  gap: 4px;
+}
+.reseñaContenedor .bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Computadoras */
+@media (min-width: 1000px) {
+  .TopProfileDetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ContenedorTopDetails {
+    height: 100%;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 4fr 3fr;
+    gap: 3px;
+  }
+  .ContenedorTopDetails .TopCD1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: yellowgreen; */
+    padding: 7px 5px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 650px) and (max-width: 999px) {
+  .DetailsGallery{
+    grid-template-columns: 1fr 1fr;
+  }
+  .TopContainerDetails {
+    height: auto;
+  }
+  .TopProfileDetails {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ContenedorTopDetails {
+    margin: 0 auto;
+    margin-top: auto;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 3px;
+  }
+  .ContenedorTopDetails .TopCD1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: yellowgreen; */
+    padding: 7px 5px;
+  }
+}
+
+/* Telefonos */
+
+@media (max-width: 641px) {
+  .DetailsGallery{
+    grid-template-columns: 1fr;
+  }
+  .TopContainerDetails {
+    width: 100%;
+    height: auto;
+  }
+  .TopProfileDetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+  .ContenedorTopDetails {
+    gap: 2px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .ContenedorTopDetails .TopCD1 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1px 10px;
+    min-height: 50px;
+    gap: 0px;
+  }
+  .TopProfileDetails .ProfileImageDetails {
+    width: 150px;
+    height: 150px;
+    left: 0;
+    right: 0;
+    transform: translate(0px, 0px);
+    bottom: 0px;
+    margin: auto;
+    object-fit: cover;
+    position: absolute;
+  }
+}

@@ -1,0 +1,117 @@
+.home{
+    margin: 10px;
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    position: relative;
+    border-radius: 8px;
+}
+.home img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+}
+.home .labelMain{
+    position: absolute;
+    background-color: var(--main-bg);
+    height: 90%;
+    width: 40%;
+    top: 0;
+    bottom: 0;
+    left: 3%;
+    margin: auto;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.labelMain h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.labelMain h2{
+    font-size: 30px;
+    color: var(--second-color);
+}
+.labelMain a{
+    background-color: var(--main-color);
+    display: flex;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+}
+.labelMain a:hover{
+    color: var(--second-bg);
+}
+
+@media only screen and (max-width: 993px) {
+    .labelMain h1{
+        font-size: 35px;
+    }
+    .labelMain h2{
+        font-size: 25px;
+    }
+    .labelMain a{
+        padding: 8px;
+        border-radius: 5px;
+        font-size: 25px;
+    }
+  }
+
+
+@media only screen and (max-width: 670px) {
+    .home{
+        display: flex;
+        margin: 0px;
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        border-radius: 8px;
+    }
+    .home img{
+        border-radius: 0px;
+    }
+    .home .labelMain{
+        position: absolute;
+        background-color: var(--main-bg);
+        height: fit-content;
+        width: 90%;
+        left: 0;
+        right: 0;
+        transform: translateY(20px);
+        top: auto;
+        border-radius: 0px;
+        padding: 8px;
+        box-shadow: 1px 1px 10px 1px #666;
+    }
+    .labelMain h1{
+        font-size: 30px;
+        font-weight: bold;
+        color: var(--main-color);
+    }
+    .labelMain h2{
+        font-size: 30px;
+        color: var(--second-color);
+    }
+    .labelMain a{
+        background-color: var(--main-color);
+        display: flex;
+        width: fit-content;
+        padding: 8px;
+        border-radius: 5px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 600;
+    }
+  }

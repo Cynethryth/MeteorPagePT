@@ -1,0 +1,196 @@
+.float {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+}
+.float .section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.float .section .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.float .section .imgBx::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225deg, var(--main-color), #0000);
+  mix-blend-mode: screen;
+  z-index: 1;
+}
+.float .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.float .section .contentBx {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.float .section .contentBx .formBx {
+  width: 80%;
+  height: 90%;
+}
+.float .formBx h2 {
+  color: #607d8b;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 4px solid var(--main-color);
+  display: inline-block;
+  letter-spacing: 1px;
+}
+.float .formBx .inputBx {
+  margin-bottom: 5px;
+}
+.float .formBx .inputBx span {
+  font-size: 16px;
+  margin-bottom: 2px;
+  display: inline-block;
+  font-weight: 300px;
+  letter-spacing: 1px;
+  color: #607d8b;
+  margin-right: 5px;
+}
+.float .formBx .inputBx input {
+  width: 100%;
+  padding: 5px 5px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #607d8b;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #607d8b;
+  background: transparent;
+  border-radius: 5px;
+}
+.float .formBx .inputBx input[type="submit"] {
+  background: var(--main-color);
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.float .formBx .inputBx input[type="submit"]:hover {
+  background: var(--main-color);
+}
+.float .remember input[type="checkbox"] {
+  background: var(--main-color);
+}
+.float .remember {
+  margin-bottom: 10px;
+  color: #607d8b;
+  font-weight: 400;
+  font-size: 14px;
+}
+.float .inputBx p {
+  color: #607d8b;
+}
+.float .inputBx p a {
+  color: var(--main-color);
+}
+.float .formBx h3 {
+  color: #607d8b;
+  text-align: center;
+  margin: 0px 0 10px;
+  font-weight: 500;
+}
+.float .formBx .sci {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.float .formBx .sci li {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #607d8b;
+  border-radius: 50%;
+  margin: 0 7px;
+  cursor: pointer;
+}
+.float .formBx .sci li:hover {
+  background-color: var(--main-color);
+}
+.float .sci li img {
+  width: 100%;
+  height: 100%;
+  transform: scale(0.5);
+  filter: invert(1);
+}
+.registerDobles{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#RegisterNombres {
+  width: calc(50% - 5px);
+  
+}
+#RegisterApellidos {
+  width: calc(50% - 5px);
+}
+
+
+
+@media (max-width: 768px) {
+  .float .section .contentBx .formBx {
+    overflow-y: auto;
+    height: 80%;
+  }
+  .registerDobles{
+    gap: 0px;
+  }
+  #RegisterNombres {
+    width: 100%;
+    
+  }
+  #RegisterApellidos {
+    width: 100%;
+  }
+  .float .section .imgBx {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .float .section .contentBx {
+    width: 100%;
+    z-index: 1;
+  }
+  .float .contentBx .formBx {
+    width: 100% !important;
+    padding: 40px;
+    background-color: #fff;
+    margin: 50px;
+    height: auto;
+  }
+  .float .formBx h3 {
+    color: #607d8b;
+    text-align: center;
+    margin: 30px 0 10px;
+    font-weight: 500;
+  }
+}

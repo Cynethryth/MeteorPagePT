@@ -1,0 +1,56 @@
+:root {
+  --main-color: #3fc034;
+  --second-color: #2ca314;
+  --main-bg: #ffffff;
+  --second-bg: #c7ffa1;
+  --txt-color: #ffffff;
+}
+html,
+body,.Background2 {
+  padding: 0;
+  margin: 0;
+  background-color: var(--second-bg);
+  min-height: 100vh;
+}
+.Background2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+button{
+    border: none;
+    outline: none;
+}
+.btnMain {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--main-color);
+  font-weight: 500;
+  color: var(--txt-color);
+  transition: all 0.5s ease;
+  border: 1px solid var(--txt-color);
+
+}
+.btnMain:hover {
+  background-color: var(--second-color);
+}
+
+.loginBtn {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--main-color);
+  font-weight: 600;
+  color: var(--txt-color);
+  transition: all 0.5s ease;
+  border: 1px solid var(--txt-color);
+  width: 150px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+}
+.loginBtn:hover {
+  background-color: var(--second-color);
+  box-shadow: 0 0px 6px 0 var(--txt-color);
+  color: var(--txt-color);
+}
